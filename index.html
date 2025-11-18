@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ejercicio Tailwind + Flexbox</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100 text-slate-800">
+<main class="container mx-auto p-6">
+<!-- ===== PARTE A: Tarjeta de perfil ===== -->
+<section class="min-h-[70vh] flex items-center justify-center mb-12">
+<article class="bg-white p-6 rounded-2xl shadow max-w-[420px] w-full flex flex-col sm:flex-row items-center gap-6">
+<!-- Imagen de perfil -->
+<img 
+src="img/img1.jpg" 
+alt="Foto de perfil" 
+class="w-24 h-24 rounded-full object-cover shadow-lg" 
+/>
+
+<!-- Bloque de texto -->
+<div class="flex-1 text-center sm:text-left">
+<h2 class="text-xl font-semibold text-slate-900">Enrique Velez Jaime</h2>
+<p class="text-sm text-slate-600 mt-1">Estudiante de ICO</p>
+<p class="mt-3 text-slate-700 text-sm leading-relaxed">
+Apasionado por la tecnologia y los videojuegos<br><br>
+Actualmente cursando 7mo cuatrimestre de Ingenieria en Computacion<br><br>
+Lol player
+</p>
+</div>
+
+<!-- Bloque de acciones (botones) -->
+<div class="flex gap-3 order-[-1] sm:order-none flex-col sm:flex-col w-full sm:w-auto">
+<button class="px-4 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 transition-colors">
+Seguir
+</button>
+<button class="px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50 transition-colors">
+Mensaje
+</button>
+</div>
+</article>
+</section>
+
+<!-- ===== PARTE B: Mini Dashboard ===== -->
+<section class="mb-6">
+<h2 class="text-2xl font-bold text-slate-900 mb-4">Parte B: Mini Dashboard</h2>
+</section>
+
+<div class="flex min-h-screen border-2 border-slate-200 rounded-xl overflow-hidden">
+<!-- Sidebar -->
+<aside class="hidden md:flex w-64 flex-col bg-slate-900 text-white">
+<div class="p-4 text-lg font-semibold border-b border-slate-700">Logo</div>
+<nav class="flex-1 p-4 space-y-2">
+<a class="block px-3 py-2 rounded hover:bg-slate-800 transition-colors" href="#">Dashboard</a>
+<a class="block px-3 py-2 rounded hover:bg-slate-800 transition-colors" href="#">Cursos</a>
+<a class="block px-3 py-2 rounded hover:bg-slate-800 transition-colors" href="#">Ajustes</a>
+</nav>
+</aside>
+
+<!-- Main -->
+<div class="flex-1 flex flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between p-4 border-b bg-white">
+<h1 class="text-xl font-semibold">Mi Panel</h1>
+<div class="flex items-center gap-3">
+<button class="px-3 py-2 rounded-lg border border-slate-300 hover:bg-slate-50 transition-colors text-sm">
+Notificaciones
+</button>
+<img src="https://picsum.photos/48" alt="avatar" class="w-10 h-10 rounded-full object-cover" />
+</div>
+</header>
+
+<!-- Content -->
+<section class="flex-1 p-6 bg-slate-50">
+<div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+<article class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-shadow">
+<h3 class="font-medium text-lg mb-2">Tarjeta 1</h3>
+<p class="text-slate-600 text-sm">Contenido de ejemplo para la primera tarjeta del dashboard.</p>
+</article>
+<article class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-shadow">
+<h3 class="font-medium text-lg mb-2">Tarjeta 2</h3>
+<p class="text-slate-600 text-sm">Contenido de ejemplo para la segunda tarjeta del dashboard.</p>
+</article>
+<article class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-shadow">
+<h3 class="font-medium text-lg mb-2">Tarjeta 3</h3>
+<p class="text-slate-600 text-sm">Contenido de ejemplo para la tercera tarjeta del dashboard.</p>
+</article>
+<article class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-shadow">
+<h3 class="font-medium text-lg mb-2">Tarjeta 4</h3>
+<p class="text-slate-600 text-sm">Contenido de ejemplo para la cuarta tarjeta del dashboard.</p>
+</article>
+<article class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-shadow">
+<h3 class="font-medium text-lg mb-2">Tarjeta 5</h3>
+<p class="text-slate-600 text-sm">Contenido de ejemplo para la quinta tarjeta del dashboard.</p>
+</article>
+<article class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition-shadow">
+<h3 class="font-medium text-lg mb-2">Tarjeta 6</h3>
+<p class="text-slate-600 text-sm">Contenido de ejemplo para la sexta tarjeta del dashboard.</p>
+</article>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="p-4 text-center text-slate-500 text-sm border-t bg-white">
+© 2025 - Enrique Velez Jaime
+</footer>
+</div>
+</div>
+
+</main>
+</body>
+</html>
